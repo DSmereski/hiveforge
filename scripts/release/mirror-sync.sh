@@ -39,7 +39,7 @@ DEST_DIR="$PUBLIC_ROOT/$DEST_REL"
 #  - files PUBLIC deliberately env-ified (HIVE_* vars) — preserve that work
 #    rather than re-clobber with hardcoded private values.
 #  - files PUBLIC already SCRUBBED for NSFW/uncensored-model content (preserve).
-EXCLUDE_RE='^(routes/appstore\.py|routes/app_update\.py|tests/test_appstore\.py|action_executor\.py|config\.py|hive_turn_helpers\.py|image_shim\.py|video_shim\.py|routes/proactive\.py|routes/suno\.py|sandbox/python_runtime\.py|tests/test_proactive_hive\.py|tests/test_terminal\.py|asset_importer\.py|safe_fetcher\.py|orchestrator/tests/test_bench_harness\.py|tests/test_model_catalog\.py|tests/test_asset_importer\.py|tests/test_recipes_route\.py|tests/test_recipe_store\.py|tests/test_safe_fetcher\.py)$'
+EXCLUDE_RE='^(routes/appstore\.py|routes/app_update\.py|tests/test_appstore\.py|action_executor\.py|config\.py|hive_turn_helpers\.py|image_shim\.py|video_shim\.py|routes/proactive\.py|routes/suno\.py|sandbox/python_runtime\.py|tests/test_proactive_hive\.py|tests/test_terminal\.py|asset_importer\.py|safe_fetcher\.py|orchestrator/tests/test_bench_harness\.py|tests/test_model_catalog\.py|tests/test_asset_importer\.py|tests/test_recipes_route\.py|tests/test_recipe_store\.py|tests/test_safe_fetcher\.py|critic\.md)$'
 
 # ── transform: applied to every copied text file (sed -i). Order matters:
 #    most-specific PII first so the owner-name pass also cleans owner paths. ──
